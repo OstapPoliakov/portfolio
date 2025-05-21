@@ -32,8 +32,8 @@ const skillData = [
         title: "RTK Query",
     },
     {
-        iconId: "formik",
-        title: "Formik",
+        iconId: "hookForm",
+        title: "React Hook Form",
     },
     {
         iconId: "storybook",

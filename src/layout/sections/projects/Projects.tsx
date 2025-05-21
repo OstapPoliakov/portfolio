@@ -7,7 +7,7 @@ import cryptoImage from './../../../assets/images/crypto.webp'
 import socialImage from './../../../assets/images/social2.webp'
 import { Container } from "../../../components/Container.ts";
 import { S } from "./Projects_Styles";
-import { Fade } from "react-awesome-reveal";
+//import { Fade } from "react-awesome-reveal";
 import { AnimatePresence, motion } from "framer-motion";
 
 const tabsItems: Array<{status: TabsStatusType, title: string}> = [

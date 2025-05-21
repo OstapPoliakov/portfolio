@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Gilroy-Bold";
         src:
             local("Gilroy-Bold"),
-            url("./../src/assets/fonts/Gilroy-Bold.woff") format("woff");
+            url("/src/assets/fonts/Gilroy-Bold.woff") format("woff");
         font-weight: 700;
     }
 
@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Gilroy-Medium";
         src:
             local("Gilroy-Medium"),
-            url("./../src/assets/fonts/Gilroy-Medium.woff") format("woff");
+            url("/src/assets/fonts/Gilroy-Medium.woff") format("woff");
         font-weight: 400;
     }
 
