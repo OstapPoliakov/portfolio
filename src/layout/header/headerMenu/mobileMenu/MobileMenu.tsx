@@ -21,7 +21,7 @@ export const MobileMenu: React.FC = () => {
                 <span></span>
             </S.BurgerButton>
             <S.MobileMenuPopup isOpen={menuIsOpen} onClick={ () => {setMenuIsOpen(false)} }>
-                <Menu />
+                <Menu isOpen={menuIsOpen} onClick={ () => {setMenuIsOpen(false)} }/>
                 <LanguageSwitcher/>
             </S.MobileMenuPopup>
         </S.MobileMenu>

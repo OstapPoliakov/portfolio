@@ -1,13 +1,18 @@
 import React from 'react';
 import { S } from '../HeaderMenu_Styles';
 
+type MenuPropsType = {
+    onClick?: () => void
+    isOpen?: boolean
+}
+
 const headerItems = [
     {
         title: "Home",
         href: "home",
     },
     {
-        title: "About me",
+        title: "About",
         href: "about",
     },
     {
@@ -19,7 +24,7 @@ const headerItems = [
         href: "skills",
     },
     {
-        title: "My Projects",
+        title: "Projects",
         href: "projects",
     },
     {
@@ -28,7 +33,7 @@ const headerItems = [
     },
 ]
 
-export const Menu: React.FC = () => {
+export const Menu: React.FC<MenuPropsType> = (props: MenuPropsType) => {
     return (
         <ul>
             {headerItems.map((item: {href: string, title: string}, index: number) => {
@@ -42,7 +47,9 @@ export const Menu: React.FC = () => {
                                     offset={-80}
                                     delay={0}
                                     ignoreCancelEvents={true}
-                                    >{item.title}
+                                    onClick={props.onClick}
+                        >
+                            {item.title}
                         </S.NavLink>
                     </S.MenuItem>
                 )

@@ -14,7 +14,7 @@ const NavLink = styled(Link)`
         family: "'Gilroy-Bold', sans-serif",
         weight: 700,
         Fmax: 18,
-        Fmin: 14,
+        Fmin: 16,
     })}
 
     color: ${theme.colors.fontSecondary};
@@ -50,7 +50,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     z-index: 99999;
 
     background-color: ${theme.colors.secondaryBg};
-    opacity: 0.95;
+    //opacity: 0.99;
 
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
         list-style: none;
     }
 

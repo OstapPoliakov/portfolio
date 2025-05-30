@@ -23,16 +23,16 @@ export const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: "Gilroy-Bold";
         src:
-            local("Gilroy-Bold"),
-            url("/src/assets/fonts/Gilroy-Bold.woff") format("woff");
+            //local("Gilroy-Bold"),
+            url("./fonts/Gilroy-Bold.woff") format("woff");
         font-weight: 700;
     }
 
     @font-face {
         font-family: "Gilroy-Medium";
         src:
-            local("Gilroy-Medium"),
-            url("/src/assets/fonts/Gilroy-Medium.woff") format("woff");
+            //local("Gilroy-Medium"),
+            url("./fonts/Gilroy-Medium.woff") format("woff");
         font-weight: 400;
     }
 

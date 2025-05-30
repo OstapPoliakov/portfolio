@@ -1,5 +1,5 @@
 import React from "react";
-import photoLarge from "../../../assets/images/me.jpg";
+import photoLarge from "../../../assets/images/me2.jpg";
 import photoSmall from "../../../assets/images/me_mobile.jpg";
 import { FlexWrapper } from "../../../components/FlexWrapper.ts";
 import { Container } from "../../../components/Container.ts";

@@ -15,7 +15,7 @@ const JobCityInfo = styled.div`
             family: "'Gilroy-Medium', sans-serif",
             weight: 400,
             Fmax: 18,
-            Fmin: 12,
+            Fmin: 14,
         })}
     }
 
@@ -55,7 +55,7 @@ const MainTitle = styled.h1`
         family: "'Gilroy-Medium', sans-serif",
         weight: 400,
         Fmax: 18,
-        Fmin: 12,
+        Fmin: 14,
     })}
 
     .hidden {
@@ -71,7 +71,7 @@ const Name = styled.h2`
         family: "'Gilroy-Bold', sans-serif",
         weight: 700,
         Fmax: 47,
-        Fmin: 33,
+        Fmin: 34,
     })}
     text-align: left;
 
