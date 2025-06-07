@@ -148,4 +148,10 @@ export const GlobalStyle = createGlobalStyle`
         //transform: translateY(10px);
         opacity: 0;
     }
+
+    body .Toastify {
+        padding: 0;
+        margin: 0;
+        font-family: "Gilroy-Medium, sans-serif";
+    }
 `

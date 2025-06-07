@@ -13,7 +13,7 @@ const Year = styled.h3`
         Fmin: 22,
     })}
 
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 `
 
 const EducationMenu = styled.div`
@@ -22,7 +22,7 @@ const EducationMenu = styled.div`
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
-        align-items: center;
+        align-items: flex-start;
 
         position: relative;
     }
@@ -47,12 +47,15 @@ const EducationMenu = styled.div`
 
     li {
         display: flex;
+        flex-grow: 1;
+        flex-basis: 0;
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 20px;
+        padding: 20px 20px 0px 20px;
         font-size: 18px;
         position: relative;
+        //width: 285px;
     }
 
     li::before {
@@ -84,7 +87,7 @@ const EducationMenu = styled.div`
             display: block;
 
             // изменяется выстоа псевдоэлемента (декоративной линии таймлайна)
-            height: 75%;
+            height: 77%;
             width: 2px;
             //vertical-align: middle;
             //border-radius: 50%;
@@ -119,7 +122,7 @@ const EducationMenu = styled.div`
         }
 
         ${Year} {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     }
 `
@@ -129,7 +132,7 @@ const Paragraph = styled.p`
     ${font({
         family: "'Gilroy-Medium', sans-serif",
         weight: 400,
-        Fmax: 18,
+        Fmax: 16,
         Fmin: 14,
     })}
 
@@ -137,9 +140,24 @@ const Paragraph = styled.p`
     //padding-top: 20px 0;
 `
 
+const Title = styled.p`
+    // миксин для "резиновости" шрифтов
+    ${font({
+        family: "'Gilroy-Bold', sans-serif",
+        weight: 700,
+        Fmax: 18,
+        Fmin: 14,
+    })}
+
+    color: ${theme.colors.font};
+    //padding-top: 20px 0;
+    padding-bottom: 10px;
+`
+
 export const S = {
     Education,
     EducationMenu,
     Year,
     Paragraph,
+    Title,
 }

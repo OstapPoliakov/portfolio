@@ -33,7 +33,7 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
         <S.Project>
             <S.ImageWrapper>
                 <S.Image src={props.src} alt={props.alt}/>
-                <StyledButton type="button">View demo</StyledButton>
+                <StyledButton type="button" as="a" href={props.demoLink} target="_blank" rel="noopener noreferrer">View demo</StyledButton>
             </S.ImageWrapper>
             <S.Description>
                 <S.Title>{props.title}</S.Title>

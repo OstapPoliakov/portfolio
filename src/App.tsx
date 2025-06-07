@@ -9,6 +9,7 @@ import { Contact } from './layout/sections/contacts/Contacts';
 import { Footer } from './layout/footer/Footer';
 import { Education } from './layout/sections/education/Education';
 import { GoTopButton } from './components/goTopButton/GoTopButton';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
     return (
@@ -22,6 +23,22 @@ function App() {
             <Contact />
             <Footer />
             <GoTopButton />
+            <ToastContainer
+                position="bottom-left"
+                autoClose={3000}
+                hideProgressBar
+                newestOnTop
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                style={{ 
+                    bottom: "70px",
+                    zIndex: 9999, // поверх всех элементов
+                }}
+            />
         </div>
     )
 }

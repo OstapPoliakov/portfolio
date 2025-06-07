@@ -32,6 +32,16 @@ export const StyledButton = styled.button.attrs<StyledBtnPropsType>(
     //transition: opacity 0.2s ease-out, transform 0.2s ease-out;
     transition: ${theme.animations.transition};
 
+    ${({ as }) =>
+        as === "a" &&
+        `
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+    `}
+
     // увеличение + opacity (изменение прозрачности) для кнопки при наведении
     // только для desktop
     @media (hover: hover) {
